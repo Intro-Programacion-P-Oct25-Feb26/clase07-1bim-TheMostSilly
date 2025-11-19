@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 
-public class Ejemplo03 {
+public class Ejemplo032 {
 
     
     public static void main(String[] args) {
@@ -17,9 +17,15 @@ public class Ejemplo03 {
         int suma = 0;
         int valor_ingresado;
         
+        
         while (contador <= limite) { 
             System.out.println("Ingrese el valor a sumar");
             valor_ingresado = entrada.nextInt();
+            if (valor_ingresado >= 20 && valor_ingresado <= 35){
+                suma = suma + valor_ingresado;
+            }else{
+                suma = suma + 50;
+            }
             suma = suma + valor_ingresado;
             System.out.printf("Valor ingresado %d\n", 
                     valor_ingresado);
@@ -30,3 +36,4 @@ public class Ejemplo03 {
 
     }
 }
+
